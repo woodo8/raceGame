@@ -65,6 +65,7 @@ body{
     width: 130px;
     height: 35px;
     font-size: 18px;
+    z-index: 30;
 }
 #white #pause{
     display: none;
