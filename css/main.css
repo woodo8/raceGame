@@ -57,6 +57,17 @@ body{
     top: 500px;
     background-color: white;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#white button{
+    width: 130px;
+    height: 35px;
+    font-size: 18px;
+}
+#white #pause{
+    display: none;
 }
 #left, #right{
     width: 50vw;
