@@ -51,6 +51,7 @@ setInterval(function () {
     message.classList.add("show")
     block.style.animation = "none"
     document.getElementById("score").innerText = ` Score: ${counter}`
+    counter = 0
   }
 }, 1);
 document.getElementById('restart').addEventListener("click", ()=>{
