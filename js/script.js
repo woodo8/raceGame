@@ -1,5 +1,16 @@
 alert("Click Right side of ur screen to move right, left side for left")
 
+document.getElementById("play").addEventListener("click", ()=>{
+    block.style.animation = "slide 1.5s infinite"
+    document.getElementById("play").style.display = "none"
+    document.getElementById("pause").style.display = "block"
+})
+document.getElementById("pause").addEventListener("click", ()=>{
+    block.style.animation = "none"
+    document.getElementById("pause").style.display = "none"
+    document.getElementById("play").style.display = "block"
+})
+
 function moveLeft() {
   let left = parseInt(
     window.getComputedStyle(character).getPropertyValue("left")
@@ -51,13 +62,14 @@ setInterval(function () {
     message.classList.add("show")
     block.style.animation = "none"
     document.getElementById("score").innerText = ` Score: ${counter}`
-    
   }
 }, 1);
 document.getElementById('restart').addEventListener("click", ()=>{
-    block.style.animation = "slide 1.5s infinite"
+    // block.style.animation = "slide 1.5s infinite"
     message.classList.remove("show")
-  counter = 0
+    counter = 0
+    document.getElementById("pause").style.display = "none"
+    document.getElementById("play").style.display = "block"
 })
 
 
