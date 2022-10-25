@@ -1,4 +1,4 @@
-alert("Click Right side of ur screen to move right, left side for left")
+alert("Click Right side of ur screen or right button to move right, left side or left button for left")
 
 document.getElementById("play").addEventListener("click", ()=>{
     block.style.animation = "slide 1.5s infinite"
